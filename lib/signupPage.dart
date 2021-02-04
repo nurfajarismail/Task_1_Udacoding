@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_1/blogPage.dart';
 
 class SignupPage extends StatelessWidget {
   @override
@@ -95,7 +96,12 @@ class SignupPage extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => BlogPage()),
+                          );
+                        },
                         child: Text(
                           "Sign Up",
                           style: TextStyle(color: Colors.blue),
@@ -114,7 +120,13 @@ class SignupPage extends StatelessWidget {
                           style: TextStyle(color: Colors.white),
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => BlogPage()),
+                            );
+                          },
                           child: new Text(
                             "Sign In",
                             style: TextStyle(
