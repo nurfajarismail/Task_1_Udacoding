@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_1/createblogPage.dart';
 
 class BlogPage extends StatelessWidget {
   @override
@@ -18,7 +19,12 @@ class BlogPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => CreateblogPage()),
+          );
+        },
         child: Icon(Icons.add),
       ),
       body: Container(
