@@ -4,7 +4,8 @@ import 'package:task_1/blogPage.dart';
 class SignupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       body: Container(
         padding: EdgeInsets.all(20),
         color: Colors.orange,
@@ -148,6 +149,6 @@ class SignupPage extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }
