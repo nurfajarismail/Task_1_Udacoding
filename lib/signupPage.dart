@@ -4,8 +4,8 @@ import 'package:task_1/blogPage.dart';
 class SignupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         padding: EdgeInsets.all(20),
         color: Colors.orange,
@@ -23,6 +23,9 @@ class SignupPage extends StatelessWidget {
                   Container(
                       child: TextField(
                           decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white, width: 2.0),
+                    ),
                     prefixIcon: Icon(
                       Icons.person,
                       color: Colors.white,
@@ -42,6 +45,9 @@ class SignupPage extends StatelessWidget {
                   Container(
                       child: TextField(
                           decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white, width: 2.0),
+                    ),
                     prefixIcon: Icon(
                       Icons.alternate_email,
                       color: Colors.white,
@@ -59,6 +65,9 @@ class SignupPage extends StatelessWidget {
                   Container(
                       child: TextField(
                           decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white, width: 2.0),
+                    ),
                     prefixIcon: Icon(
                       Icons.lock,
                       color: Colors.white,
@@ -76,6 +85,10 @@ class SignupPage extends StatelessWidget {
                   Container(
                     child: TextField(
                         decoration: InputDecoration(
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.white, width: 2.0),
+                            ),
                             prefixIcon: Icon(
                               Icons.lock,
                               color: Colors.white,
@@ -149,6 +162,6 @@ class SignupPage extends StatelessWidget {
           ),
         ),
       ),
-    ));
+    );
   }
 }
