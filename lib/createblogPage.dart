@@ -52,7 +52,7 @@ class CreateblogPage extends StatelessWidget {
                       // borderRadius: BorderRadius.all(Radius.circular(5.0)),
                       borderSide: BorderSide(color: Colors.blue[900], width: 2),
                     )),
-                maxLines: 20,
+                maxLines: 10,
                 keyboardType: TextInputType.multiline,
               ),
             ),
