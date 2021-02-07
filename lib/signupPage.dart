@@ -64,26 +64,31 @@ class SignupPage extends StatelessWidget {
                   ),
                   Container(
                       child: TextField(
+                          obscureText: true,
                           decoration: InputDecoration(
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white, width: 2.0),
-                    ),
-                    prefixIcon: Icon(
-                      Icons.lock,
-                      color: Colors.white,
-                    ),
-                    hintStyle: TextStyle(color: Colors.white),
-                    hintText: 'Password',
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                      borderSide: BorderSide(color: Colors.white, width: 2),
-                    ),
-                  ))),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.white, width: 2.0),
+                            ),
+                            prefixIcon: Icon(
+                              Icons.lock,
+                              color: Colors.white,
+                            ),
+                            hintStyle: TextStyle(color: Colors.white),
+                            hintText: 'Password',
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(5.0)),
+                              borderSide:
+                                  BorderSide(color: Colors.white, width: 2),
+                            ),
+                          ))),
                   SizedBox(
                     height: 10,
                   ),
                   Container(
                     child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
                               borderSide:
