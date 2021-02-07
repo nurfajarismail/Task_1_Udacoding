@@ -40,18 +40,21 @@ class CreateblogPage extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            TextField(
-              decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.blue[900], width: 2.0),
-                  ),
-                  //contentPadding: const EdgeInsets.symmetric(vertical: 200.0),
-                  enabledBorder: OutlineInputBorder(
-                    // borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                    borderSide: BorderSide(color: Colors.blue[900], width: 2),
-                  )),
-              maxLines: 10,
-              keyboardType: TextInputType.multiline,
+            Expanded(
+              child: TextField(
+                decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.blue[900], width: 2.0),
+                    ),
+                    //contentPadding: const EdgeInsets.symmetric(vertical: 200.0),
+                    enabledBorder: OutlineInputBorder(
+                      // borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                      borderSide: BorderSide(color: Colors.blue[900], width: 2),
+                    )),
+                maxLines: 10,
+                keyboardType: TextInputType.multiline,
+              ),
             ),
             SizedBox(
                 width: double.infinity,
