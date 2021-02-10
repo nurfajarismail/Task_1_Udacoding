@@ -4,8 +4,7 @@ import 'package:task_1/createblogPage.dart';
 class BlogPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
       appBar: AppBar(
         leading: Icon(
           Icons.menu,
@@ -68,6 +67,6 @@ class BlogPage extends StatelessWidget {
           ],
         ),
       ),
-    ));
+    );
   }
 }
